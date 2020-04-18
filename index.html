@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOOB Single Page Website</title>
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!--FONTS AWESOME-->
+    <script src="https://kit.fontawesome.com/5d74160e22.js" crossorigin="anonymous"></script>
+    <!--VENDORES FILE-->
+    <link rel="stylesheet" href="vendores/css/normalize.css">
+    <link rel="stylesheet" href="vendores/css/grid.css">
+    <link rel="stylesheet" href="vendores/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendores/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendores/css/style.css">
+    <!--RESOURCES FILE-->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+
+<body>
+    <!--START HEADER SECTION-->
+    <header id="home" class="header-section">
+        <nav>
+            <div class="row">
+                <a href="#home" class="logo">
+                    <img src="resources/img/logo.png" alt="DOOB">
+                </a>
+                <div class="main-menu">
+                    <ul class="left-menu">
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#service">services</a></li>
+                        <li><a href="#about">about us</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#blog">blog</a></li>
+                        <li><a href="#skill">skill</a></li>
+                    </ul>
+                    <ul class="right-menu">
+                        <li class="select">
+                            <select name="slct" id="lang">
+                                <option value="En">EN</option>
+                                <option value="Bn">BN</option>
+                            </select>
+                        </li>
+                        <li class="contract"><a href="#contract">contract us &#8594;</a></li>
+                    </ul>
+                </div>
+                <!-- MOBILE MENUE-->
+                <div class="mobile-menu">
+                    <span onclick="openNav()">&#9776;</span>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&times;</a>
+                        <div class="overlay-content">
+                            <a onclick="closeNav()" href="#home">home</a>
+                            <a onclick="closeNav()" href="#service">services</a>
+                            <a onclick="closeNav()" href="#about">about us</a>
+                            <a onclick="closeNav()" href="#portfolio">portfolio</a>
+                            <a onclick="closeNav()" href="#blog">blog</a>
+                            <a onclick="closeNav()" href="#skill">skill</a>
+                            <a onclick="closeNav()" href="#contract">contract</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="header-box row">
+            <div class="col span_1_of_2 hero-text-box box">
+                <h1>The Spirit of Digital Agency.</h1>
+                <p class="little-description">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla
+                    porttitor accumsan tincidunt.</p>
+                <a href="#" class="btn btn-hero">more about us</a>
+            </div>
+            <div class="col span_1_of_2 hero-img">
+                <img src="resources/img/hero-img.png" alt="banner">
+            </div>
+        </div>
+    </header>
+    <!--END HEADER SECTION-->
+
+    <!--START SERCVICES SECTION-->
+    <section id="service" class="services-section js-service-section">
+        <div class="row">
+            <div class="container">
+                <div class="col span_1_of_3 service-tex-box">
+                    <h2 class="service-hero">Anything you need, we’ve got you covered</h2>
+                    <a href="#" class="btn btn-service">get in touch</a>
+                </div>
+                <div class="col span_1_of_3 service-item link wobble-vertical-on-hover">
+                    <div class="service-icon">
+                        <i class="fab fa-dropbox"></i>
+                    </div>
+                    <h2>Web & Graphic Design</h2>
+                    <p class="little-description">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui.
+                        Nulla porttitor accumsan tincidunt.</p>
+                </div>
+                <div class="col span_1_of_3 service-item link wobble-vertical-on-hover">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h2>Web & App Development</h2>
+                    <p class="little-description">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui.
+                        Nulla porttitor accumsan tincidunt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END SERCVICES SECTION-->
+    <!--START ABOUT SECTION-->
+    <section id="about" class="about-section">
+        <div class="row">
+            <div class="container">
+                <div class="col span_1_of_2 box">
+                    <div class="about-img">
+                        <img src="resources/img/service-1.png" alt="about">
+                    </div>
+                </div>
+                <div id="raihan" class="owl-carousel owl-theme col span_1_of_2 box">
+                    <div class="content">
+                        <h3>our company</h3>
+                        <h2>Some Fine Words About Us</h2>
+                        <p class="little-description">
+                            Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor
+                            accumsan tincidunt.Vestibulum ac diam sit amet. Quam vehicula elementum amet est on dui.
+                            Nulla porttitor accumsan tincidunt.
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h3>our company</h3>
+                        <h2>Some Fine Words About Us</h2>
+                        <p class="little-description">
+                            Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor
+                            accumsan tincidunt.Vestibulum ac diam sit amet. Quam vehicula elementum amet est on dui.
+                            Nulla porttitor accumsan tincidunt.
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h3>our company</h3>
+                        <h2>Some Fine Words About Us</h2>
+                        <p class="little-description">
+                            Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor
+                            accumsan tincidunt.Vestibulum ac diam sit amet. Quam vehicula elementum amet est on dui.
+                            Nulla porttitor accumsan tincidunt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END ABOUT SECTION-->
+
+    <!--START PORTFOLIO SECTION-->
+    <section id="portfolio" class="portfolio-section">
+        <div class="row">
+            <h2>See some of our Creative work.</h2>
+            <p class="little-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                architecto, fuga nisi ipsam laboriosam possimus voluptatem sed, corporis non consequatur nemo iusto
+                recusandae suscipit.</p>
+        </div>
+        <div class="row">
+            <div class="portfolio-fillter">
+                <button type="button" data-filter="all">all</button>
+                <button type="button" data-filter=".web">Web</button>
+                <button type="button" data-filter=".apps">apps</button>
+                <button type="button" data-filter=".ui-ux">ui/ ux</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container portfolio-img">
+                <div class="col span_1_of_3 box">
+                    <img class="mix web apps" src="resources/img/portfolio-1.jpg" alt="portfolio">
+                </div>
+                <div class="col span_1_of_3 box">
+                    <img class="mix apps ui-ux" src="resources/img/portfolio-2.jpg" alt="portfolio">
+                </div>
+                <div class="col span_1_of_3 box">
+                    <img class="mix web apps" src="resources/img/portfolio-3.jpg" alt="portfolio">
+                </div>
+                <div class="col span_1_of_3 box">
+                    <img class="mix ui-ux apps" src="resources/img/portfolio-4.jpg" alt="portfolio">
+                </div>
+                <div class="col span_1_of_3 box web apps">
+                    <img class="mix web ui-ux" src="resources/img/portfolio-5.jpg" alt="portfolio">
+                </div>
+                <div class="col span_1_of_3 box web ui-ux">
+                    <img class="mix apps web" src="resources/img/portfolio-6.png" alt="portfolio">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END PORTFOLIO SECTION-->
+
+    <!--START BLOG SECTION-->
+    <section id="blog" class="blog-section">
+        <div class="row">
+            <h4>BLOG STORIES</h4>
+            <h2>Check Our News</h2>
+        </div>
+        <div id="slide2" class="row">
+            <div class="blog-item-container owl-carousel owl-theme">
+                <div class="blog-post">
+                    <h3>New Adventure</h3>
+                    <h3 class="date">17 March 2019</h3>
+                    <p class="little-description">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui.
+                        Nulla porttitor accumsan tincidunt.</p>
+                    <a href="#">&#8594;</a>
+                </div>
+                <div class="blog-post">
+                    <h3>New Adventure</h3>
+                    <h3 class="date">17 March 2019</h3>
+                    <p class="little-description">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui.
+                        Nulla porttitor accumsan tincidunt.</p>
+                    <a href="#">&#8594;</a>
+                </div>
+                <div class="blog-post">
+                    <h3>New Adventure</h3>
+                    <h3 class="date">17 March 2019</h3>
+                    <p class="little-description">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui.
+                        Nulla porttitor accumsan tincidunt.</p>
+                    <a href="#">&#8594;</a>
+                </div>
+                <div class="blog-post">
+                    <h3>New Adventure</h3>
+                    <h3 class="date">17 March 2019</h3>
+                    <p class="little-description">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui.
+                        Nulla porttitor accumsan tincidunt.</p>
+                    <a href="#">&#8594;</a>
+                </div>
+                <div class="blog-post">
+                    <h3>New Adventure</h3>
+                    <h3 class="date">17 March 2019</h3>
+                    <p class="little-description">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui.
+                        Nulla porttitor accumsan tincidunt.</p>
+                    <a href="#">&#8594;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END BLOG SECTION-->
+
+    <!--START SKILL SECTION-->
+    <section id="skill" class="skill-section">
+        <div class="row">
+            <h2>our skill!</h2>
+            <p class="ittle-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, suscipit mollitia sapiente quia.
+            </p>
+        </div>
+        <div class="row">
+            <div class="bar_group">
+                <div class="skill-content">
+                    <h3>HTML</h3>
+                    <div id="bar1" class="barfiller">
+                        <span class="tip"></span>
+                        <span class="fill" data-percentage="95"></span>
+                    </div>
+                </div>
+                <div class="skill-content">
+                    <h3>CSS</h3>
+                    <div id="bar2" class="barfiller">
+                        <span class="tip"></span>
+                        <span class="fill" data-percentage="90"></span>
+                    </div>
+                </div>
+                <div class="skill-content">
+                    <h3>PHP</h3>
+                    <div id="bar3" class="barfiller">
+                        <span class="tip"></span>
+                        <span class="fill" data-percentage="80"></span>
+                    </div>
+                </div>
+                <div class="skill-content">
+                    <h3>JAVA SCRIPT</h3>
+                    <div id="bar4" class="barfiller">
+                        <span class="tip"></span>
+                        <span class="fill" data-percentage="85"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END SEKILL SECTION-->
+    <!--START CONTRACT SECTION-->
+    <section class="contract-section" id="contract">
+        <div class="row">
+            <h4>contract us!</h4>
+            <h2>Get in Touch!</h2>
+            <p class="little-description">22/4A, block-B, New Yourk, USA, call: +000 222 111</p>
+        </div>
+        <div class="row">
+            <form action="https://formspree.io/xbjarwwy" method="POST">
+                <div class="row">
+                    <div class="col span_1_of_2">
+                        <input type="email" placeholder="Your email *" required>
+                    </div>
+                    <div class="col span_1_of_2">
+                        <input type="text" placeholder="subject *" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <textarea name="Message" cols="50" rows="10" placeholder="Message here..."></textarea>
+                </div>
+                <input type="submit" value="Send Your Message" class="btn btn-submit">
+            </form>
+        </div>
+    </section>
+    <!--END CONTRACT SECTION-->
+    <!--START FOOTER SECTION-->
+    <footer class="footer-section">
+        <div class="row">
+            <h4>DOOB</h4>
+            <h2>CREATIVITY ABOVE</h2>
+        </div>
+        <div class="row">
+            <ul class="footer-menu">
+                <li><a href="#home">home.</a></li>
+                <li><a href="#service">services.</a></li>
+                <li><a href="#about">about us.</a></li>
+                <li><a href="#portfolio">portfolio.</a></li>
+                <li><a href="#blog">blog.</a></li>
+                <li><a href="#skill">skill.</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <span> © 2020-Doob,All Right Reserved</span>
+        </div>
+        <div class="row">
+            <div class="social-icon">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--END FOOTER SECTION-->
+
+    <!--VENDORES JS FILE-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="vendores/js/html5shiv.min.js"></script>
+    <script src="vendores/js/respond.min.js"></script>
+    <script src="vendores/js/selectivizr-min.js"></script>
+    <script src="vendores/js/jquery.waypoints.min.js"></script>
+    <script src="vendores/js/owl.carousel.min.js"></script>
+    <script src="vendores/js/mixitup.min.js"></script>
+    <script src="vendores/js/jquery.barfiller.js"></script>
+    <!--RESOURECS JS FILE-->
+    <script src="resources/js/main.js"></script>
+</body>
+
+</html>

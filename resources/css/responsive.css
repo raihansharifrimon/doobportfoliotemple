@@ -1,0 +1,88 @@
+@media only screen and (max-width: 1200px) {
+    .header-section .header-box .col:first-child {
+        margin-left: 5%;
+    }
+
+    .header-section .header-box .span_1_of_2 {
+        width: 45.2%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .about-section h2 {
+        width: 100%;
+    }
+
+    .services-section h1 {
+        width: 100%;
+    }
+
+    .header-section h1 {
+        font-size: 5rem;
+    }
+
+    .portfolio-section h2 {
+        width: 59%;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .mobile-menu span {
+        display: block;
+    }
+
+    .skill-section .bar_group {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 57.5%;
+    }
+
+    .header-section .box {
+        margin-top: 3rem;
+    }
+
+    .services-section .span_1_of_3 {
+        width: 100%;
+    }
+
+    .services-section .span_1_of_3:last-child {
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .owl-carousel {
+        width: 100%;
+        z-index: 2;
+    }
+
+    .header-section .header-box .span_1_of_2 {
+        width: 90%;
+    }
+
+    .header-section .hero-img {
+        display: none;
+    }
+
+    .services-section .span_1_of_3:last-child {
+        margin-left: 0rem;
+    }
+
+    .portfolio-section h2 {
+        width: 100%;
+    }
+
+    .portfolio-section .little-description {
+        width: 100%;
+    }
+}

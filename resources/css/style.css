@@ -1,0 +1,783 @@
+/*===========================*/
+/* BASIC SETUP */
+/*===========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    font-size: 1.8rem;
+    line-height: normal;
+    color: #314584;
+}
+
+.row {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+section {
+    padding: 8rem;
+}
+
+/*===========================*/
+/* REAUSEABLE COMPONENT */
+/*===========================*/
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: left;
+    line-height: normal;
+    margin: .5rem 0;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: .5rem 0;
+    color: #ff3946;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-----PARAGRAPH-----*/
+.little-description {
+    width: 100%;
+    text-align: left;
+    margin: 1rem;
+    font-weight: 400;
+}
+
+/*---BUTTON-----*/
+
+.btn a:link,
+.btn a:visited,
+.btn {
+    padding: 1rem 2rem;
+    background: #ff3946;
+    margin: 3rem 0;
+    color: #fff;
+    border-radius: 3rem;
+    display: inline-block;
+    text-transform: capitalize;
+    box-shadow: .1rem .1rem .4rem #535357;
+}
+
+.btn:hover {
+    background: #314584;
+    transition: .2s;
+}
+
+/*===========================*/
+/* HEADER SECTION */
+/*===========================*/
+
+.header-section {
+    background: #fff url(img/hero-bg.png) no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.logo {
+    width: 7rem;
+    height: 3rem;
+    margin: 5rem 4rem;
+    float: left;
+}
+
+.hero-text-box {
+    text-align: left;
+}
+
+.header-section .box {
+    margin-top: 8rem;
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.header-section .hero-img {
+    margin-top: 10rem;
+}
+
+.header-section .hero-img img {
+    width: 80%;
+    height: auto;
+    float: right;
+    margin-right: 10%;
+}
+
+.header-section .little-description {
+    margin: 2rem 0;
+}
+
+/*---MAIN NAVIGATION-----*/
+
+.main-menu {
+    margin: 5rem;
+}
+
+.left-menu {
+    float: left;
+    margin-left: 4%;
+}
+
+.right-menu {
+    float: right;
+    margin-right: 1%;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin: .5rem;
+}
+
+.main-menu ul li:first-child {
+    margin-left: 0;
+}
+
+.main-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.main-menu ul {
+    display: inline-block;
+}
+
+.main-menu li a:link,
+.main-menu li a:visited,
+.main-menu li a:active {
+    text-transform: capitalize;
+    padding: .6rem 1rem;
+}
+
+.main-menu li a:hover {
+    color: #ff3946;
+}
+
+/*--STICKY MENU--*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f4fafec9;
+    width: 100%;
+    box-shadow: .2rem .2rem .5rem #424040c4;
+    z-index: 5;
+    padding: 0 1rem;
+}
+
+.sticky .main-menu {
+    margin: 1.5rem;
+}
+
+.sticky .left-menu {
+    margin-left: 6%;
+}
+
+.sticky .right-menu {
+    margin-right: 1%;
+}
+
+.sticky .logo {
+    margin: 2rem;
+}
+/*--MOBILE MENU--*/
+
+.mobile-menu span {
+    font-size: 3rem;
+    float:right;
+    margin-right: 3rem;
+    margin-top: 4rem;
+    color: #314584;
+    display: none;
+}
+.mobile-menu span:hover {
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: #626f9d8c;
+    z-index: 9;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.overlay-content {
+    position: relative;
+    text-align: center;
+    top: 20%;
+    width: 100%;
+
+}
+
+.overlay a {
+    display: block;
+    text-decoration: none;
+    font-size: 3rem;
+    color: rgba(253, 253, 253, 0.918);
+    text-transform: capitalize;
+    padding: 1rem;
+    letter-spacing: .2rem;
+    transition: .2s;
+}
+
+.overlay a:hover {
+    color: #ff3946;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 4rem;
+    right: 4.5rem;
+    font-size: 6rem;
+}
+
+.sticky .mobile-menu span {
+    margin-top: 1.5rem;
+}
+
+/*-----SELECT LAN----*/
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border: 0;
+    background: rgba(243, 237, 237, 0);
+    cursor: pointer;
+    padding: 0;
+    outline: 0;
+}
+
+.select::after {
+    content: '\25BC';
+    bottom: 0;
+    left: 0;
+    margin-left: -1rem;
+    margin-right: 3rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    pointer-events: none;
+}
+
+.select:hover,
+select:hover {
+    color: #ff3946;
+}
+
+.contract {
+    background: #fff;
+    box-shadow: 0.1rem .2rem .8rem #414142;
+    padding: .5rem 0;
+}
+
+/*===========================*/
+/* services SECTION */
+/*===========================*/
+
+.services-section {
+    background: #fff url(img/bg-2.png) left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+}
+
+.services-section .service-hero {
+    font-size: 3rem;
+    width: 70%;
+    line-height: 4rem;
+    margin-top: 0;
+}
+
+.services-section .btn {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.services-section .service-item {
+    background: #fff;
+    box-shadow: 0.2rem 0.2rem .5rem #192d338a;
+    padding: 2rem;
+    width: 24rem;
+}
+
+.services-section .little-description {
+    width: 75%;
+    font-size: 1.4rem;
+    margin-left: 0;
+}
+
+.services-section h2 {
+    width: 100%;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.services-section .service-icon {
+    font-size: 4rem;
+    color: #ff3946;
+}
+
+.services-section .span_1_of_3:last-child {
+    margin-left: 5%;
+}
+
+/*===================*/
+/* WOOBLE VERTICAL
+/*===================*/
+
+@-webkit-keyframes wobble-vertical-on-hover {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+
+    49.95% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+
+    83.25% {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes wobble-vertical-on-hover {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+
+    49.95% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+
+    83.25% {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.wobble-vertical-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.wobble-vertical-on-hover:hover,
+.wobble-vertical-on-hover:focus,
+.wobble-vertical-on-hover:active {
+    -webkit-animation-name: wobble-vertical-on-hover;
+    animation-name: wobble-vertical-on-hover;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+
+/*===================*/
+/*---ABOUT SECTION---*/
+/*===================*/
+
+.about-section {
+    background: #fff url(img/bg-3.png)right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+}
+
+.about-section img {
+    width: 80%;
+    height: auto;
+}
+
+.about-section h3 {
+    font-size: 1.4rem;
+    color: #ff3946;
+    margin: 2rem 0;
+    text-transform: capitalize;
+}
+
+.about-section h2 {
+    margin: 2rem 0;
+    font-size: 4rem;
+    width: 56%;
+}
+
+.about-section .little-description {
+    margin: 3rem 0;
+    font-size: 1.8rem;
+    width: 95%;
+}
+
+.owl-carousel {
+    width: 49.2%;
+    z-index: 2;
+}
+
+.owl-nav {
+    font-size: 4rem;
+}
+
+.owl-nav .owl-prev {
+    margin-right: 2rem;
+}
+
+/*===================*/
+/*---ABOUT SECTION---*/
+/*===================*/
+.portfolio-section {
+    background: #fff url(img/portfolio-bg.png) no-repeat;
+    background-attachment: scroll;
+    background-position: left top;
+    background-size: contain;
+}
+
+.portfolio-section .col {
+    overflow: hidden;
+}
+
+.portfolio-section .span_1_of_3:nth-child(4) {
+    margin-left: 0;
+}
+
+.portfolio-section h2 {
+    font-size: 3.8rem;
+    width: 35%;
+    margin: 2rem 0;
+}
+
+.portfolio-section .little-description {
+    width: 63%;
+    margin: 3rem 0;
+}
+
+.portfolio-section .portfolio-fillter {
+    margin: 1rem 0;
+}
+
+.portfolio-fillter button {
+    border: 0;
+    background: #314584;
+    color: #fff;
+    padding: .6rem .9rem;
+    margin: .5rem;
+    cursor: pointer;
+    border-radius: .3rem;
+    font-size: 1.8rem;
+}
+
+.portfolio-fillter button:hover {
+    background: #ff3946;
+    transition: .3s;
+    box-shadow: .2rem .2rem .5rem #31448463;
+}
+
+.portfolio-img img {
+    width: 100%;
+    height: auto;
+}
+
+.owl-theme .owl-dots {
+    display: none;
+}
+
+.about-section .owl-theme .owl-nav [class*="owl-"]:hover {
+    color: #ff3946;
+    background: none;
+}
+
+/*===================*/
+/*---BLOG SECTION---*/
+/*===================*/
+
+.blog-section {
+    background: #fff url(img/blog-bg.png) no-repeat;
+    background-attachment: scroll;
+    background-position: right center;
+    background-size: contain;
+}
+
+.blog-section h2 {
+    font-size: 3.5rem;
+    margin: 1.5rem 0;
+}
+
+.blog-item-container h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 2.5rem 0;
+}
+
+.blog-item-container {
+    margin-top: 8rem;
+}
+
+.blog-item-container .little-description {
+    margin: 4rem 0;
+    width: 90%;
+}
+
+.blog-item-container .blog-post h4 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+.blog-post a {
+    cursor: pointer;
+    float: right;
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: #535357;
+}
+
+.blog-post .date {
+    font-size: 1.4rem;
+}
+
+.blog-item-container .blog-post {
+    background: #fff;
+    box-shadow: .2rem .2rem .7rem #535357;
+    padding: 3rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.blog-item-container .blog-post:hover,
+.blog-post a:hover {
+    color: #fff;
+    background: #ff3946;
+    transition: .5s;
+}
+
+.blog-section .owl-carousel {
+    width: 100%;
+    z-index: 2;
+}
+
+.blog-section .owl-theme .owl-nav [class*="owl-"]:hover {
+    color: #ff3946;
+    background: none;
+}
+
+/*===================*/
+/*---SKILL SECTION---*/
+/*===================*/
+.skill-section {
+    background: #fff url(img/bg-2.png) left center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.skill-section .ittle-description {
+    margin: 2rem 0;
+}
+
+.skill-section h2 {
+    margin-left: 0;
+}
+
+.skill-section .bar_group {
+    width: 70%;
+    margin: 1rem 0;
+}
+
+.skill-section .b_label,
+.skill-section .bar_label_min,
+.skill-section .bar_label_max,
+.skill-section .b_tooltip sp.skill-section {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+
+.skill-section .bar_label_max,
+.skill-section .bar_label_min {
+    display: none;
+}
+
+.skill-section .b_label,
+.skill-section .bar_label_min,
+.skill-section .bar_label_max,
+.skill-section .b_tooltip span {
+    font-size: 1.6rem;
+}
+
+/*===================*/
+/*--CONTRACT SECTION--*/
+/*===================*/
+
+.contract-section {
+    background:#fff url(img/bg-3.png)right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+}
+
+.contract-section h2 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contract-section .little-description {
+    margin-left: 0;
+    margin-bottom: 4rem;
+}
+
+form {
+    width: 90%;
+    text-align: center;
+}
+
+.contract-section input[type="email"],
+.contract-section input[type="text"],
+.contract-section textarea {
+    width: 100%;
+    padding: 1.5rem;
+    outline: 0;
+    border: 0;
+    border-radius: .5rem;
+    background: #f4fafe;
+    color: #626f9d;
+    border: .1rem solid #626f9d;
+}
+
+.contract-section textarea {
+    height: 12rem;
+    margin-top: 1.5rem;
+}
+
+.contract-section .btn {
+    border: 0;
+    outline: 0;
+}
+
+/*===================*/
+/*--FOOTER SECTION--*/
+/*===================*/
+
+.footer-section {
+    background: #314584;
+    text-align: center;
+}
+
+.footer-section h4 {
+    color: #fff;
+    margin-top: 3rem;
+
+
+}
+
+.footer-section h2 {
+    font-size: 4rem;
+    color: #ff3946;
+    text-align: center;
+    margin: 1.5rem;
+    letter-spacing: .3rem;
+}
+
+.footer-section ul li {
+    display: inline-block;
+    padding: .5rem;
+    margin: 1rem 1.5rem;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer-section span {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.footer-section .social-icon a {
+    font-size: 3rem;
+    transition: .3s;
+}
+
+.footer-section .social-icon {
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.footer-section a:hover {
+    color: #ff3946;
+}
